@@ -10,11 +10,8 @@ async function xml(url) {
 async function main() {
     async function check() {
         const xml2 = await xml(url)
-            //console.log(xml2)
         xml2js.parseString(xml2, function(err, result) {
-            //console.log(JSON.stringify(result.sitemapindex.sitemap))
-            console.log(JSON.stringify(result.sitemapindex.sitemap[2].loc));
-            console.log('jetzt')
+        console.log(JSON.stringify(result))
         })
     }
     setInterval(check, 10000)
