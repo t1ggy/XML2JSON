@@ -4,7 +4,9 @@ Just install Node
 ```
 npm install
 ```
- after that just start
- ```
- npm xmltojson.js
- ```
+after that edit the url you want to fetch and convert into json 
+
+then run the programm
+```
+npm xmltojson.js
+```
